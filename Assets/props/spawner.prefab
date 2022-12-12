@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7601530356919337199}
+  - component: {fileID: 1670634795}
   m_Layer: 7
   m_Name: spawner
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4711185506532261946}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47, y: 2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31,3 +32,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670634795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4711185506532261946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95f99d5f51a6649be31df169a3d006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shareOrientation: 0
+  displayDebugInfo: 1
+  prefabToSpawn:
+  - prefab: {fileID: 6882255070849097137, guid: be30c2bd45061df4da625ad38be810be,
+      type: 3}
+    weight: 1
+  randomMinOffset: {x: 0, y: 0, z: 0}
+  randomMaxOffset: {x: 0, y: 0, z: 0}
+  useCooldown: 1
+  spawnCooldown: 3
+  useInput: 0
+  spawnInputName: Input Name (InputManager)
+  spawnInsideParent: 0
+  parent: {fileID: 0}
+  requireResources: 0
+  resourceManager: {fileID: 0}
+  resourceIndex: 0
+  resourceCostOnUse: 10
+  destroyOnNoResourceLeft: 0
+  inputChoiceIndex: 0
